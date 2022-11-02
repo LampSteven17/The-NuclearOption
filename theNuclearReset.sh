@@ -34,6 +34,10 @@ omf install bass
 echo /usr/bin/fish | sudo tee -a /etc/shells  
 chsh -s /usr/bin/fish  
 
+#OLD PYTHON VERSION DEPENDENCIES
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt-get update
+sudo apt-get install python3.6
 
 # PYTHON 2 INSTALLATION w/PIP2
 sudo apt-add-repository universe 
@@ -46,3 +50,5 @@ sudo apt update
 sudo apt install curl 
 curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
 sudo python2 get-pip.py
+
+# CUDA 10.2 Installation 
